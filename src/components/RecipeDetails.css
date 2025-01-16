@@ -1,0 +1,46 @@
+.recipe-details {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* 전체 내용을 중앙 정렬 */
+}
+
+.recipe-details img {
+  width: 70%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 auto 20px; /* 상하 여백은 0, 좌우는 자동으로 설정하여 중앙 정렬 */
+  display: block; /* 이미지를 블록 요소로 변경하여 margin auto 적용 */
+  transition: transform 0.3s ease;
+}
+
+.recipe-details img:hover {
+  transform: scale(1.02);
+}
+
+.recipe-details h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center; /* 제목 중앙 정렬 */
+}
+
+.recipe-details h3 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  text-align: left; /* 섹션 제목은 왼쪽 정렬 유지 */
+}
+
+.recipe-details ul,
+.recipe-details ol {
+  padding-left: 20px;
+  text-align: left; /* 목록은 왼쪽 정렬 유지 */
+}
+
+.recipe-details li {
+  margin-bottom: 10px;
+}

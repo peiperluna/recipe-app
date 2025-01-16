@@ -1,0 +1,40 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  width: 100%;
+}
+
+.carousel-item {
+  min-width: 100%;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 50%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 5px;
+  border: none;
+}
+
+.carousel-indicators button.active {
+  background-color: #150a52;
+}
