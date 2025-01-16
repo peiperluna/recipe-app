@@ -33,4 +33,4 @@
 ㆍ 레시피 필터링
 ㆍ 사용자 레시피 추가 기능
 
-[배포 주소](https://movie-app-lunaping.netlify.app)
+[배포 주소](https://recipe-app-lunaping.netlify.app/)
