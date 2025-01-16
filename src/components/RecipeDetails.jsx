@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./RecipeDetails.css";
 
-const API_KEY = "1ff0e87c807944eab75b"; // 발급받은 API 키를 입력하세요.
+const API_KEY = import.meta.env.VITE_API_KEY;
 const SERVICE_ID = "COOKRCP01"; // 서비스 ID
 const DATA_TYPE = "json"; // 요청 파일 타입
 

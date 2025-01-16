@@ -6,13 +6,11 @@ import RecipeDetails from "./components/RecipeDetails";
 import "./App.css";
 import Carousel from "./components/Carousel";
 
-const API_URL = "https://openapi.foodsafetykorea.go.kr/api/1ff0e87c807944eab75b/COOKRCP01/json/1/10";
-
 function App() {
   const [recipes, setRecipes] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [isPopular, setIsPopular] = useState(false);
-
+  const API_KEY = import.meta.env.VITE_API_KEY;
   useEffect(() => {
     console.log("Fetching initial popular recipes");
     fetchRecipes("popular", true);
@@ -31,10 +29,10 @@ function App() {
 
       if (popular) {
         // 인기 레시피를 가져오는 경우
-        url = `https://openapi.foodsafetykorea.go.kr/api/1ff0e87c807944eab75b/COOKRCP01/json/1/10`; // 인기 레시피 요청
+        url = `https://openapi.foodsafetykorea.go.kr/api/${API_KEY}/COOKRCP01/json/1/10`; // 인기 레시피 요청
       } else {
         // 검색 쿼리를 사용하여 레시피를 가져오는 경우
-        url = `https://openapi.foodsafetykorea.go.kr/api/1ff0e87c807944eab75b/COOKRCP01/json/1/10/RCP_NM=${query}`; // 쿼리로 검색
+        url = `https://openapi.foodsafetykorea.go.kr/api/${API_KEY}/COOKRCP01/json/1/10/RCP_NM=${query}`; // 쿼리로 검색
       }
 
       const response = await fetch(url);
